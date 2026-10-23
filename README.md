@@ -4,6 +4,11 @@ Elective project (PC-Interface technology), FH CAMPUS 02, Graz. A PIN-controlled
 
 > **Note:** the original sketch was lost. This code is a **reconstruction** from my project presentation (includes, MQTT topics, lock/unlock logic, logger and callback are as presented; the keypad loop, web page and pin numbers are re-implemented). I will mark it as tested once I have run it on the hardware again.
 
+## Hardware
+![Breadboard build with ESP32, keypad, OLED, PIR sensor and servo](images/breadboard-overview.jpg)
+![ESP32 with keypad and servo](images/esp32-keypad-servo.jpg)
+![OLED showing the PIN prompt](images/oled-display.jpg)
+
 ## Features
 - PIN entry on a 4x4 keypad (`#` = enter, `*` = clear), feedback on an I2C OLED (SSD1306)
 - Servo moves the lock (90° locked, 0° open); auto-lock after 10 s
